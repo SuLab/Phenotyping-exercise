@@ -9,13 +9,13 @@ Use the architecture in "Automated analysis of high-content microscopy data with
 - GAN exercise-Deep.ipynb: A GAN exercise.
 
 ## Request GPU nodes at HPC:
-'''
+```
 qsub -I -X -q gpu -l nodes=1:ppn=8:gtx980 -l mem=250gb
-'''
+```
 Load modules:
-'''
+```
 module load cuda
 module load gcc
 module load python/3.6.3
-'''
+```
 I use Xming to forward X11 and run the jupyter notebook interactively.
